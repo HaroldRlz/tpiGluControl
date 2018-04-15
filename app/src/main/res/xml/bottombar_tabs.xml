@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id = '@+id/graphics'
+        tittle = '@string/tab_graphics'
+        barColorWhenSelected = '@color/colorPrimary'
+        icon = '@drawable/ic_graph'/>
+    <tab
+        id = '@+id/nutrition'
+        tittle = '@string/tab_nutrition'
+        barColorWhenSelected = '@color/colorPrimary'
+        icon = '@drawable/ic_food'/>
+    <tab
+        id = '@+id/home'
+        tittle = '@string/tab_home'
+        barColorWhenSelected = '@color/colorPrimary'
+        icon = '@drawable/ic_home'/>
+</tabs>
