@@ -79,4 +79,8 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="foodname_card">Chocolate</string>
+    <string name="foodrecord_card">Tinto en la chaza</string>
+    <string name="firstword_card">Hace</string>
+    <string name="timecard_card">2 dias</string>
 </resources>

@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="foodname_card">Chocolate</string>
+    <string name="firstword_card">Hace</string>
+    <string name="timecard_card">2 dias</string>
+</resources>
