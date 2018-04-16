@@ -34,6 +34,7 @@ public class GraphicsFragment extends Fragment {
 
     public void showToolbar(String tittle, boolean upButton, View view){
         Toolbar toolbar = (Toolbar) view.findViewById(R.id.toolbar);
+        toolbar.setBackgroundColor(getResources().getColor(R.color.graph_Color));
         ((AppCompatActivity) getActivity()).setSupportActionBar(toolbar);
         ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle(tittle);
         ((AppCompatActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(upButton);
