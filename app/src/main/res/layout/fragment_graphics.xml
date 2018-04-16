@@ -6,19 +6,19 @@
     tools:context=".View.fragment.GraphicsFragment">
     <include layout="@layout/actionbar_toolbar"/>
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/bottombar_height">
         <com.github.mikephil.charting.charts.LineChart
             android:id="@+id/glucometryChart"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="300dp"
+            android:layout_centerInParent="true">
 
         </com.github.mikephil.charting.charts.LineChart>
-    </LinearLayout>
+    </RelativeLayout>
 
 </android.support.design.widget.CoordinatorLayout>

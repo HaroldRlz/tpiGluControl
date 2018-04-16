@@ -7,5 +7,6 @@
     <color name="editTextColorBlack">#000000</color>
     <color name="backgroundtext_card">#53292929</color>
     <color name="nutrition_Color">#28CAA6</color>
-    <color name="graph_Color">#7F70E7</color>
+    <color name="graph_Color">#ea5a17</color>
+    <color name="chartLine_Color">#cc1023</color>
 </resources>
