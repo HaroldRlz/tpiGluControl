@@ -83,4 +83,5 @@
     <string name="foodrecord_card">Tinto en la chaza</string>
     <string name="firstword_card">Hace</string>
     <string name="timecard_card">2 dias</string>
+    <string name="title_activity_reference">ReferenceActivity</string>
 </resources>

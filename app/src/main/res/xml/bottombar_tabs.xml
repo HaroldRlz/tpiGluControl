@@ -3,16 +3,17 @@
     <tab
         id = '@+id/graphics'
         tittle = '@string/tab_graphics'
-        barColorWhenSelected = '@color/colorPrimary'
+        barColorWhenSelected = '@color/graph_Color'
         icon = '@drawable/ic_graph'/>
-    <tab
-        id = '@+id/nutrition'
-        tittle = '@string/tab_nutrition'
-        barColorWhenSelected = '@color/colorPrimary'
-        icon = '@drawable/ic_food'/>
     <tab
         id = '@+id/home'
         tittle = '@string/tab_home'
         barColorWhenSelected = '@color/colorPrimary'
         icon = '@drawable/ic_home'/>
+    <tab
+        id = '@+id/nutrition'
+        tittle = '@string/tab_nutrition'
+        barColorWhenSelected = '@color/nutrition_Color'
+        icon = '@drawable/ic_food'/>
+
 </tabs>
