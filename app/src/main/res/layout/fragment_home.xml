@@ -6,18 +6,16 @@
     tools:context=".View.fragment.HomeFragment">
     <include layout="@layout/actionbar_toolbar"/>
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/bottombar_height">
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/logo"/>
-    </LinearLayout>
+            android:background="@drawable/logo"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
 
 
 
