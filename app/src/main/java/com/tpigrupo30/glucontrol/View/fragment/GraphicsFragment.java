@@ -9,7 +9,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.github.mikephil.charting.charts.LineChart;
+import com.github.mikephil.charting.data.Entry;
+import com.github.mikephil.charting.data.LineData;
+import com.github.mikephil.charting.data.LineDataSet;
 import com.tpigrupo30.glucontrol.R;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -29,7 +37,28 @@ public class GraphicsFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_graphics, container, false);
         showToolbar("Gráficas",false, view);
 
+        showChart(view);
+
+
         return view;
+    }
+
+    public void showChart(View view){
+        LineChart chart = (LineChart) view.findViewById(R.id.glucometryChart);
+        List<Entry> entries = new ArrayList<Entry>();
+        entries.add(new Entry(1,75));
+        entries.add(new Entry(2,95));
+        entries.add(new Entry(3,205));
+        entries.add(new Entry(4,145));
+        entries.add(new Entry(5,75));
+        entries.add(new Entry(6,185));
+        entries.add(new Entry(7,105));
+
+        LineDataSet lineDataSet = new LineDataSet(entries,"Glucometrias");
+
+        LineData lineData = new LineData(lineDataSet);
+        chart.setData(lineData);
+        chart.invalidate();
     }
 
     public void showToolbar(String tittle, boolean upButton, View view){
