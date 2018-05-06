@@ -55,6 +55,8 @@ public class GraphicsFragment extends Fragment {
         entries.add(new Entry(7,105));
 
         LineDataSet lineDataSet = new LineDataSet(entries,"Glucometrias");
+        lineDataSet.setLineWidth(3);
+        lineDataSet.setColor(getResources().getColor(R.color.chartLine_Color));
 
         LineData lineData = new LineData(lineDataSet);
         chart.setData(lineData);

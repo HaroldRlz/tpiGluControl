@@ -52,9 +52,9 @@ public class NutritionFragment extends Fragment {
     //Con este metodo se integra la base de datos en forma de array
     public ArrayList<Picture> buildPictures(){
         ArrayList<Picture> pictures = new ArrayList<>();
-        pictures.add(new Picture("http://www.novalandtours.com/images/guide/guilin.jpg", "Tinto en la chaza", "4 dias"));
-        pictures.add(new Picture("http://www.enjoyart.com/library/landscapes/italianlandscapesseascapes/large/TC-HBLakeGarda-jpg.jpg", "Tamal en la central", "3 dias"));
-        pictures.add(new Picture("http://www.educationquizzes.com/library/KS3-Geography/river-1-1.jpg", "Empanada del Che", "4 dias"));
+        pictures.add(new Picture("http://assets.kraftfoods.com/recipe_images/opendeploy/114863_640x428.jpg", "Chocolate", "4 dias"));
+        pictures.add(new Picture("https://cdn.colombia.com/sdi/2011/07/27/tamal-tolimense-503629.jpg", "Tamal", "3 dias"));
+        pictures.add(new Picture("https://ugc.kn3.net/i/origin/https://www.mexicanplease.com/wp-content/uploads/2017/05/beef-cheese-empanadas-after-cooking-taking-bite.jpg", "Empanada", "4 dias"));
         return pictures;
     }
 

@@ -3,4 +3,8 @@
     <string name="foodname_card">Chocolate</string>
     <string name="firstword_card">Hace</string>
     <string name="timecard_card">2 dias</string>
+    <string name="hint_username_login">Ingrese su nombre de usuario</string>
+    <string name="hint_password_login">Contraseña</string>
+    <string name="hint_button_login">LOGIN</string>
+    <string name="hint_button_register">No account? sign up</string>
 </resources>
