@@ -10,6 +10,9 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.github.mikephil.charting.charts.LineChart;
+import com.github.mikephil.charting.components.AxisBase;
+import com.github.mikephil.charting.components.XAxis;
+import com.github.mikephil.charting.components.YAxis;
 import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
@@ -46,21 +49,31 @@ public class GraphicsFragment extends Fragment {
     public void showChart(View view){
         LineChart chart = (LineChart) view.findViewById(R.id.glucometryChart);
         List<Entry> entries = new ArrayList<Entry>();
-        entries.add(new Entry(1,75));
+        entries.add(new Entry(1,90));
         entries.add(new Entry(2,95));
-        entries.add(new Entry(3,205));
+        entries.add(new Entry(3,175));
         entries.add(new Entry(4,145));
-        entries.add(new Entry(5,75));
+        entries.add(new Entry(5,90));
         entries.add(new Entry(6,185));
         entries.add(new Entry(7,105));
 
         LineDataSet lineDataSet = new LineDataSet(entries,"Glucometrias");
         lineDataSet.setLineWidth(3);
+        lineDataSet.setAxisDependency(YAxis.AxisDependency.LEFT);
+        lineDataSet.setValueTextColor(getResources().getColor(R.color.editTextColorBlack));
+        lineDataSet.setValueTextSize(10);
         lineDataSet.setColor(getResources().getColor(R.color.chartLine_Color));
+
+
 
         LineData lineData = new LineData(lineDataSet);
         chart.setData(lineData);
+        XAxis xAxis = chart.getXAxis();
+        xAxis.setTextSize(15);
+        YAxis yAxis = chart.getAxisLeft();
+        yAxis.setTextSize(15);
         chart.invalidate();
+
     }
 
     public void showToolbar(String tittle, boolean upButton, View view){

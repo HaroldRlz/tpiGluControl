@@ -3,19 +3,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".View.fragment.HomeFragment">
     <include layout="@layout/actionbar_toolbar"/>
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingTop="@dimen/bottombar_height">
-        <ImageView
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:orientation="vertical">
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/logo"
-            android:layout_centerVertical="true"/>
-    </RelativeLayout>
+            android:text="Tu estado"
+            android:gravity="center_horizontal"
+            android:textSize="45sp"/>
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/userstate_piechart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+        </com.github.mikephil.charting.charts.PieChart>
+    </LinearLayout>
 
 
 

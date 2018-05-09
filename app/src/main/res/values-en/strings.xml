@@ -5,6 +5,9 @@
     <string name="timecard_card">2 dias</string>
     <string name="hint_username_login">Ingrese su nombre de usuario</string>
     <string name="hint_password_login">Contraseña</string>
-    <string name="hint_button_login">LOGIN</string>
-    <string name="hint_button_register">No account? sign up</string>
+    <string name="hint_button_login">Ingresar</string>
+    <string name="hint_button_register">¿Sin cuenta? Registrate</string>
+    <string name="foodproperties">Calorias:\nCarbohidratos:\nAgua:\n Proteinas:\n Grasa:\n  Fibra:\n</string>
+    <string name="foodproperties_values">441\n74,1\n3,1\n3,8\n16,8\n1,0</string>
+
 </resources>
