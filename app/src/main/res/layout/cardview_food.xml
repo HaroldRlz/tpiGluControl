@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="280dp"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    cardview:cardCornerRadius="@dimen/cardview_cornerradius">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="@dimen/cardview_horizontal_margin"
+            android:layout_marginRight="@dimen/cardview_horizontal_margin"
+            android:layout_marginLeft="@dimen/cardview_horizontal_margin"
+            android:background="@color/backgroundtext_card"
+            android:weightSum="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.2"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/foodPictureCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/image3"
+                    android:scaleType="centerCrop"
+                    android:layout_weight="0.45"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="0.55"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:text="Calorias"
+                        android:textStyle="bold|italic"
+                        android:textColor="@android:color/white"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="30sp"/>
+                    <TextView
+                        android:id="@+id/foodCarbohydratesCard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="300Ca"
+                        android:textStyle="italic"
+                        android:textColor="@android:color/white"
+                        android:textSize="50sp"
+                        android:layout_gravity="center_horizontal" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="HC"
+                        android:textStyle="bold|italic"
+                        android:textColor="@android:color/white"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="30sp"/>
+                    <TextView
+                        android:id="@+id/foodCaloriesCard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="250Hc"
+                        android:textStyle="italic"
+                        android:textColor="@android:color/white"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="50sp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/foodNameCard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Tinto"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:layout_weight="0.8"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+</android.support.v7.widget.CardView>

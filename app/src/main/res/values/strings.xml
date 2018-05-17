@@ -89,6 +89,8 @@
     <string name="hint_button_login">entrar</string>
     <string name="hint_button_register">¿sin cuenta? registrate</string>
     <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
-    <string name="foodproperties">Calorias:\nCarbohidratos:\nAgua:\n Proteinas:\n Grasa:\n  Fibra:\n</string>
+    <string name="foodproperties">Calorias:\nCarbohidratos:\nAcido ascorbico:\nAgua:\nCalcio:\nCenizas:
+                                Fibra:\nFosforo:\nGrasa:\nHierro:\nNiacina:\nProteinas:\nRiboflamina:\n
+                                Tiamina:\nVitamina A</string>
     <string name="foodproperties_values">441\n74,1\n3,1\n3,8\n16,8\n1,0</string>
 </resources>
