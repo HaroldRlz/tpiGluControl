@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="280dp"
     xmlns:cardview="http://schemas.android.com/apk/res-auto"
-    cardview:cardCornerRadius="@dimen/cardview_cornerradius">
+    cardview:cardCornerRadius="@dimen/cardview_cornerradius"
+    cardview:cardElevation="8dp">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -22,18 +23,17 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="5dp"
                 android:layout_weight="0.2"
                 android:orientation="horizontal"
                 android:weightSum="1">
 
                 <ImageView
+                    android:layout_margin="5dp"
                     android:id="@+id/foodPictureCard"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@drawable/image3"
-                    android:scaleType="centerCrop"
+                    android:scaleType="centerInside"
                     android:layout_weight="0.45"/>
 
                 <LinearLayout
@@ -44,14 +44,16 @@
                     android:layout_gravity="center_vertical"
                     android:gravity="center">
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingTop="5dp"
                         android:text="Calorias"
                         android:textStyle="bold|italic"
                         android:textColor="@android:color/white"
                         android:layout_gravity="center_horizontal"
-                        android:textSize="30sp"/>
+                        android:gravity="center_horizontal"
+                        android:textSize="30sp"
+                        android:background="@color/recyclerItemColor"/>
                     <TextView
                         android:id="@+id/foodCarbohydratesCard"
                         android:layout_width="wrap_content"
@@ -62,12 +64,13 @@
                         android:textSize="50sp"
                         android:layout_gravity="center_horizontal" />
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="HC"
                         android:textStyle="bold|italic"
                         android:textColor="@android:color/white"
-                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:background="@color/recyclerItemColor"
                         android:textSize="30sp"/>
                     <TextView
                         android:id="@+id/foodCaloriesCard"
@@ -91,7 +94,8 @@
                 android:gravity="center_horizontal"
                 android:textSize="35sp"
                 android:textStyle="bold"
-                android:layout_weight="0.8"/>
+                android:layout_weight="0.8"
+                android:background="@color/recyclerItemColor"/>
         </LinearLayout>
 
     </FrameLayout>

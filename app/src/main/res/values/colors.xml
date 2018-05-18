@@ -7,8 +7,11 @@
     <color name="colorSecondaryDark">#a00037</color>
     <color name="editTextColorWhite">#FFFFFF</color>
     <color name="editTextColorBlack">#000000</color>
-    <color name="backgroundtext_card">#53292929</color>
+    <color name="backgroundtext_card">#303030</color>
     <color name="nutrition_Color">#28CAA6</color>
     <color name="graph_Color">#ea5a17</color>
     <color name="chartLine_Color">#cc1023</color>
+    <color name="registerItemColor">#E0E0E0</color>
+
+    <color name="recyclerItemColor">#4a148c</color>
 </resources>

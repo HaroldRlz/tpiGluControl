@@ -21,4 +21,12 @@
         </com.github.mikephil.charting.charts.LineChart>
     </RelativeLayout>
 
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="@dimen/circle_add_graphpoint"
+        android:layout_height="@dimen/circle_add_graphpoint"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/plus" />
+
 </android.support.design.widget.CoordinatorLayout>

@@ -12,4 +12,6 @@
     <dimen name="padding_horizontal_login">32dp</dimen>
     <dimen name="appbarlayout_height">250dp</dimen>
     <dimen name="cardview_horizontal_margin">10dp</dimen>
+    <dimen name="circle_register_image">180dp</dimen>
+    <dimen name="circle_add_graphpoint">60dp</dimen>
 </resources>
