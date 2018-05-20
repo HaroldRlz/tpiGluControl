@@ -93,4 +93,5 @@
                                 Fibra:\nFosforo:\nGrasa:\nHierro:\nNiacina:\nProteinas:\nRiboflamina:\n
                                 Tiamina:\nVitamina A</string>
     <string name="foodproperties_values">441\n74,1\n3,1\n3,8\n16,8\n1,0</string>
+    <string name="foodpicture_transition">foodpictureTransition</string>
 </resources>

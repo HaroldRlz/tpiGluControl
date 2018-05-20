@@ -1,8 +1,10 @@
 package com.tpigrupo30.glucontrol.View;
 
+import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.transition.Fade;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
@@ -49,6 +51,11 @@ public class DetailedFoodActivity extends AppCompatActivity {
                 nm.format(foodCont[12]) + "\n" + nm.format(foodCont[13]) + "\n" + nm.format(foodCont[14]) + "\n";
 
         textViewContent.setText(ContentText);
+
+        //Se recibe la transicion desde el holder
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
+            getWindow().setEnterTransition(new Fade());
+        }
 
         /*List<String> propertiesList = new ArrayList<String>(Arrays.asList(properties));
         ArrayAdapter<String> propertiesAdapter = new ArrayAdapter<String>(this,R.layout.activity_detailed_food,propertiesList){

@@ -2,8 +2,11 @@ package com.tpigrupo30.glucontrol.adapter;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Build;
 import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v7.widget.RecyclerView;
+import android.transition.Explode;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -57,7 +60,17 @@ public class FoodAdapterRecyclerView extends RecyclerView.Adapter<FoodAdapterRec
                 intent.putExtra("foodName",food.getNombreAlimento());
                 intent.putExtra("foodContent",foodContent);
 
-                activity.startActivity(intent);
+                if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
+                    Explode explode = new Explode();
+                    explode.setDuration(1000);
+                    activity.getWindow().setExitTransition(explode);
+                    //Se fija la transicion en el view y la actividad de contexto inicial
+                    activity.startActivity(intent,
+                            ActivityOptionsCompat.makeSceneTransitionAnimation(activity,v,activity.getString(R.string.foodpicture_transition)).toBundle());
+                }else {
+                    activity.startActivity(intent);
+                }
+
             }
         });
 
