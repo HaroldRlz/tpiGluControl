@@ -62,9 +62,7 @@ public class DetailedFoodActivity extends AppCompatActivity {
             @Override
             public View getView(int position, View convertView, ViewGroup parent){
                 View view = super.getView(position, convertView, parent);
-
                 TextView tv = (TextView) view.findViewById(android.R.id.text1);
-
                 // Set the text size 25 dip for ListView each item
                 tv.setTextSize(TypedValue.COMPLEX_UNIT_DIP,25);
                 return view;

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add_gluco">
+
+
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="5dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="10dp">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textAddGluco"
+            android:layout_marginTop="10dp"
+            android:text="Nueva Glucometría"
+            android:theme="@style/editTextBlack"
+            android:textSize="35dp"
+            android:gravity="center"
+            />
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/editTextBlack"
+        android:layout_marginTop="20dp"
+        android:background="@color/registerItemColor">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/valorGlucoEditText"
+            android:layout_width="300dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:textSize="27sp"
+            android:layout_height="wrap_content"
+            android:hint="Valor [mg/dL]"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/addGlucoButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Añadir"
+            android:textSize="30sp"
+            android:layout_marginTop="20dp"
+            android:theme="@style/RaisedButtonPink"
+            />
+
+
+    </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.constraint.ConstraintLayout>

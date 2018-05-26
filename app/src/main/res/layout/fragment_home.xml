@@ -18,13 +18,27 @@
             android:text="Tu estado"
             android:gravity="center_horizontal"
             android:textSize="45sp"/>
+
         <com.github.mikephil.charting.charts.PieChart
             android:id="@+id/userstate_piechart"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="447dp"
+            android:layout_height="350dp"
             android:layout_gravity="center">
 
+
         </com.github.mikephil.charting.charts.PieChart>
+
+        <Button
+            android:id="@+id/idDosisButton"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NUEVA DOSIS"
+            android:textSize="20dp"
+            />
+
+
+
     </LinearLayout>
 
 

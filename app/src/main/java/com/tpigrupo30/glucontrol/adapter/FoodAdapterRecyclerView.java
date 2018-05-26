@@ -51,10 +51,10 @@ public class FoodAdapterRecyclerView extends RecyclerView.Adapter<FoodAdapterRec
                 Intent intent = new Intent(activity, DetailedFoodActivity.class);
                 //pass the food inf to detailed activity
                 double foodContent[] = {food.getCalorias(),food.getCarbohidratos(), food.getAcidoAscorbico(),
-                                    food.getAgua(), food.getCalcio(),food.getCenizas(),food.getFibra(),
-                                    food.getFosforo(), food.getGrasa(),food.getHierro(),food.getNiacina(),
-                                    food.getProteinas(),food.getRiboflamina(),food.getTiamina(),
-                                    food.getVitaminaA()};
+                        food.getAgua(), food.getCalcio(),food.getCenizas(),food.getFibra(),
+                        food.getFosforo(), food.getGrasa(),food.getHierro(),food.getNiacina(),
+                        food.getProteinas(),food.getRiboflamina(),food.getTiamina(),
+                        food.getVitaminaA()};
 
                 intent.putExtra("foodPicture",food.getResImagen());
                 intent.putExtra("foodName",food.getNombreAlimento());

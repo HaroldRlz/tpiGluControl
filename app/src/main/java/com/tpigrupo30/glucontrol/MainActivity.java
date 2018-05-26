@@ -3,6 +3,7 @@ package com.tpigrupo30.glucontrol;
 import android.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.roughike.bottombar.BottomBar;
 import com.roughike.bottombar.OnTabSelectListener;
@@ -16,6 +17,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        User usuario = (User)getIntent().getExtras().getSerializable("parametro");
+
+        Toast.makeText(this, usuario.getName(),
+                Toast.LENGTH_SHORT).show();
+
+        getIntent().putExtra("parameter",usuario);
 
         BottomBar bottomBar = (BottomBar) findViewById(R.id.bottombar);
         bottomBar.setDefaultTab(R.id.home);

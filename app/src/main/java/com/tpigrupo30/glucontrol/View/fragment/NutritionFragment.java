@@ -1,7 +1,9 @@
 package com.tpigrupo30.glucontrol.View.fragment;
 
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -15,8 +17,11 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.tpigrupo30.glucontrol.R;
+import com.tpigrupo30.glucontrol.User;
 import com.tpigrupo30.glucontrol.adapter.FoodAdapterRecyclerView;
 import com.tpigrupo30.glucontrol.adapter.PictureAdapterRecyclerView;
+import com.tpigrupo30.glucontrol.add_food;
+import com.tpigrupo30.glucontrol.devices_bt;
 import com.tpigrupo30.glucontrol.model.Food;
 import com.tpigrupo30.glucontrol.model.FoodList;
 import com.tpigrupo30.glucontrol.model.Picture;
@@ -27,7 +32,7 @@ import java.util.ArrayList;
  * A simple {@link Fragment} subclass.
  */
 public class NutritionFragment extends Fragment {
-
+User usuario;
 
     public NutritionFragment() {
         // Required empty public constructor
@@ -37,6 +42,11 @@ public class NutritionFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+        Intent i = getActivity().getIntent();
+        usuario = (User) i.getSerializableExtra("parametro");
+
+
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_nutrition, container, false);
         showToolbar("Nutrición",false, view);
@@ -53,6 +63,17 @@ public class NutritionFragment extends Fragment {
         //FoodAdapterRecyclerView foodAdapterRecyclerView =
           //      new FoodAdapterRecyclerView(buildFood(),R.layout.cardview_food,getActivity());
         foodPicturesRecycler.setAdapter(foodAdapterRecyclerView);
+
+        FloatingActionButton fab2 =  (FloatingActionButton) view.findViewById(R.id.fab2);
+        fab2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), add_food.class);
+                intent.putExtra("parametro", usuario);
+                startActivity(intent);
+            }
+        });
+
 
         return view;
     }
