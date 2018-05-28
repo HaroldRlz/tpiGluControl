@@ -46,7 +46,7 @@ public class HomeFragment extends Fragment {
 
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
-        showToolbar("Bienvenido " + usuario.getName(), false, view);
+        showToolbar("Bienvenido " + usuario.getName(), true, view);
         showChart(view);
         Button idDosisButton = (Button) view.findViewById(R.id.idDosisButton);
         idDosisButton.setOnClickListener(new View.OnClickListener() {

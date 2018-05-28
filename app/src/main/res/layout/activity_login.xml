@@ -21,9 +21,10 @@
             <ImageView
                 android:id="@+id/logo"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:background="@drawable/logo"
-                android:layout_centerInParent="true"/>
+                android:layout_centerInParent="true"
+                android:layout_marginHorizontal="@dimen/padding_horizontal_login"/>
         </RelativeLayout>
         <ScrollView
             android:layout_width="match_parent"
@@ -34,7 +35,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:padding="@dimen/padding_horizontal_login"
+                android:paddingHorizontal="@dimen/padding_horizontal_login"
                 >
                 <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
@@ -46,6 +47,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="@string/hint_username_login"
+                        android:singleLine="true"
                         />
                 </android.support.design.widget.TextInputLayout>
                 <android.support.design.widget.TextInputLayout
@@ -69,6 +71,7 @@
                     android:text="@string/hint_button_login"
                     android:theme="@style/RaisedButtonDark"
                     android:onClick="goContainer"
+                    android:layout_marginTop="20dp"
                     />
                 <Button
                     android:id="@+id/registerButton"

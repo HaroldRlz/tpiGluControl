@@ -1,10 +1,12 @@
 package com.tpigrupo30.glucontrol.View.fragment;
 
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -13,8 +15,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.tpigrupo30.glucontrol.R;
 import com.tpigrupo30.glucontrol.User;
@@ -68,9 +72,44 @@ User usuario;
         fab2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), add_food.class);
-                intent.putExtra("parametro", usuario);
-                startActivity(intent);
+                //Intent intent = new Intent(getActivity(), add_food.class);
+                //intent.putExtra("parametro", usuario);
+                //startActivity(intent);
+                Toast.makeText(getActivity(),"FUNCIONA",Toast.LENGTH_SHORT).show();
+
+
+                LayoutInflater inflater = getLayoutInflater();
+                View alertLayout = inflater.inflate(R.layout.popup_addfood, null);
+                final EditText etFoodname = alertLayout.findViewById(R.id.regFoodName);
+                final EditText etCalorias = alertLayout.findViewById(R.id.regCalorias);
+                final EditText etCarbohidratos = alertLayout.findViewById(R.id.regCarbohidratos);
+                final EditText etAcido = alertLayout.findViewById(R.id.regAcido);
+
+                AlertDialog.Builder alert = new AlertDialog.Builder(getActivity());
+                //alert.setTitle("Info");
+                // this is set the view from XML inside AlertDialog
+                alert.setView(alertLayout);
+                // disallow cancel of AlertDialog on click of back button and outside touch
+                alert.setCancelable(false);
+                alert.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Toast.makeText(getActivity(), "Operacion cancelada", Toast.LENGTH_SHORT).show();
+                    }
+                });
+                alert.setPositiveButton("Done", new DialogInterface.OnClickListener() {
+
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        String name = etFoodname.getText().toString();
+
+                        Toast.makeText(getActivity(), "Alimento agregado: " + name, Toast.LENGTH_SHORT).show();
+                        //falta agregar un condicional o try-catch en caso de level == NULL
+                    }
+                });
+                AlertDialog dialog = alert.create();
+                dialog.show();
             }
         });
 

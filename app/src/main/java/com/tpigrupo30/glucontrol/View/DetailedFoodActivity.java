@@ -1,5 +1,6 @@
 package com.tpigrupo30.glucontrol.View;
 
+import android.content.Intent;
 import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -14,6 +15,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
+import com.tpigrupo30.glucontrol.MainActivity;
 import com.tpigrupo30.glucontrol.R;
 
 import java.lang.reflect.Array;
@@ -28,7 +30,7 @@ public class DetailedFoodActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detailed_food);
-        showToolbar("",true);
+        showToolbar("",false);
         ImageView imageView = (ImageView) findViewById(R.id.foodPictureDetail);
         TextView textViewName = (TextView) findViewById(R.id.foodNameDetail);
         TextView textViewContent = (TextView) findViewById(R.id.foodContentDetail);
@@ -79,4 +81,6 @@ public class DetailedFoodActivity extends AppCompatActivity {
         getSupportActionBar().setTitle(tittle);
         getSupportActionBar().setDisplayHomeAsUpEnabled(upButton);
     }
+
+
 }

@@ -23,7 +23,7 @@ public class add_gluco extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_food);
 
-        User usuario = (User)getIntent().getExtras().getSerializable("parametro");
+        //User usuario = (User)getIntent().getExtras().getSerializable("parametro");
     }
 }
       //  usuario = (User)getIntent().getExtras().getSerializable("parametro");

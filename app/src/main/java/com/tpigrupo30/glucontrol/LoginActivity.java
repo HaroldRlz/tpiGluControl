@@ -45,11 +45,11 @@ public class LoginActivity extends AppCompatActivity {
         glucoList.add(new Glucometria(90));
         glucoList.add(new Glucometria(110));
 
-        User usuario = new User("psuarez", "pasword", "Masculino", 65, 5, "Tipo 2", mealList, glucoList);
+        User usuario = new User("sroa", "pasword", "Masculino", 65, 5, "Tipo 2", mealList, glucoList);
 
 
 
-        if (name.equals("psuarez") && pasword.equals("pasword")) {
+        if (name.equals("sroa") && pasword.equals("psd")) {
             Intent intent = new Intent(this, MainActivity.class);
             intent.putExtra("parametro", usuario);
             startActivity(intent);

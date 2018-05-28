@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@android:color/white"
+    tools:context=".View.CreateAccountActivity">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="5dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registra un nuevo alimento"
+                android:textSize="35sp"
+                android:gravity="center"
+                android:textColor="@color/editTextColorBlack"
+                android:background="@color/colorPrimary"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/editTextBlack"
+                android:layout_marginTop="10dp"
+                android:background="@color/registerItemColor">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/regFoodName"
+                    android:layout_width="300dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:textSize="27sp"
+                    android:layout_height="wrap_content"
+                    android:hint="Nombre del alimento"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/editTextBlack"
+                android:layout_marginTop="10dp"
+                android:background="@color/registerItemColor"
+                app:passwordToggleEnabled="true">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/regCalorias"
+                    android:layout_width="300dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:textSize="27sp"
+                    android:layout_height="wrap_content"
+                    android:hint="Calorias"
+                    android:inputType="numberDecimal"/>
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/editTextBlack"
+                android:layout_marginTop="10dp"
+                android:background="@color/registerItemColor">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/regCarbohidratos"
+                    android:layout_width="300dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:textSize="27sp"
+                    android:layout_height="wrap_content"
+                    android:hint="Carbohidratos"
+                    android:inputType="numberDecimal"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/editTextBlack"
+                android:layout_marginTop="10dp"
+                android:background="@color/registerItemColor">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/regAcido"
+                    android:layout_width="300dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:textSize="23sp"
+                    android:layout_height="wrap_content"
+                    android:hint="Acido ascorbico"
+                    android:inputType="numberDecimal"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
